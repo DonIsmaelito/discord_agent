@@ -6,7 +6,7 @@ from trl import SFTTrainer, SFTConfig
 import torch
 
 model, tokenizer = FastVisionModel.from_pretrained(
-    "unsloth/Llama-3.2-11B-Vision-Instruct",
+    "unsloth/mistral-7b-bnb-4bit",
     load_in_4bit = True,
     use_gradient_checkpointing = "unsloth",
 )
